@@ -1,21 +1,21 @@
 beans
 -----
 
-.. autodata:: beans.BeansType
+.. autodata:: sphinxtest.beans.BeansType
 
-.. autofunction:: beans.beansfunc
+.. autofunction:: sphinxtest.beans.beansfunc
 
-.. autoclass:: beans.Beans
+.. autoclass:: sphinxtest.beans.Beans
    :members:
 
-.. autodata:: beans.beans
+.. autodata:: sphinxtest.beans.beans
 
-.. autodata:: beans.BEANS
+.. autodata:: sphinxtest.beans.BEANS
    :no-value:
 
-.. autoexception:: beans.TooManyBeansException
+.. autoexception:: sphinxtest.beans.TooManyBeansException
 
-.. py:decorator:: beans.beansDecorator(num_beans: int = 5)
+.. py:decorator:: sphinxtest.beans.beansDecorator(num_beans: int = 5)
 
    counts the beans
 
