@@ -9,8 +9,8 @@ Welcome to Sphinxtest's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-   beans
 
+   beans
 
 Indices and tables
 ==================
