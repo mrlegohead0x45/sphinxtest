@@ -12,10 +12,8 @@ jobs:
     
       - 
         name: Build docs
+        working-directory: ./docs
         run: |
-          ls
-          pwd
-          cd docs
           make html
           
       - 
