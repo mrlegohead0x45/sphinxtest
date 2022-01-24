@@ -13,6 +13,8 @@ jobs:
       - 
         name: Build docs
         run: |
+          ls
+          pwd
           cd docs
           make html
           
