@@ -12,8 +12,14 @@ jobs:
     
       - 
         name: Build docs
-        working-directory: ./docs
+        #working-directory: ../docs
         run: |
+          echo "ls ."
+          ls 
+          echo "ls .."
+          ls ..
+          echo "ls ../.."
+          ls ../..
           make html
           
       - 
