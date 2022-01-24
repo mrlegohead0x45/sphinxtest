@@ -2,12 +2,25 @@ name: Sphinx Build
 
 on: [push]
 
-jobs:
-  docs:
+jobs:  
+  sphinx-build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - uses: ammaraskar/sphinx-action@master
-      with:
-        docs-folder: "docs/"
-        
+      - 
+        name: Set up poetry
+        uses: Gr1N/setup-poetry@v7
+    
+      - 
+        name: Build docs
+        run: |
+          cd docs
+          make html
+          
+      - 
+        name: Deploy to pages
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          build_dir: docs/build/html
+          jekyll: false
+          verbose: true
+          
