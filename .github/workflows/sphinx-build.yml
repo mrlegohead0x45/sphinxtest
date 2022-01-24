@@ -20,6 +20,10 @@ jobs:
           ls ..
           echo "ls ../.."
           ls ../..
+          cd ..
+          ls 
+          cd docs
+          ls
           make html
           
       - 
